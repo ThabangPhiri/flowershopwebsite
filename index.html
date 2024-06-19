@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffc107;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #ff6f61;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            text-align: center;
+            color: #ff6f61;
+        }
+        .floral-arrangements, .special-offers, .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 70%;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #ff6f61;
+        }
+        .card p {
+            color: #777;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .contact-form {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .contact-form h3 {
+            text-align: center;
+            color: #ff6f61;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+        .contact-form button:hover {
+            background-color: #ff3f3f;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Filtimo Bloom Flower Shop</h1>
+</header>
+
+<nav>
+    <a href="#featured">Featured Arrangements</a>
+    <a href="#offers">Special Offers</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container">
+    <section id="featured" class="section">
+        <h2>Featured Floral Arrangements</h2>
+        <div class="floral-arrangements">
+            <div class="card">
+                <h3>Beautiful Bouquet</h3>
+                <p>Perfect for any occasion. Price: R50</p>
+            </div>
+            <div class="card">
+                <h3>Spring Delight</h3>
+                <p>Brighten up your day. Price: R50</p>
+            </div>
+            <div class="card">
+                <h3>Rose Romance</h3>
+                <p>Elegant roses for loved ones. Price: R100</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="section">
+        <h2>Special Offers</h2>
+        <div class="special-offers">
+            <div class="card">
+                <h3>20% Off on Wedding Flowers</h3>
+                <p>Book your wedding flowers now and get 20% off.</p>
+            </div>
+            <div class="card">
+                <h3>Buy One Get One Free</h3>
+                <p>On selected bouquets. Limited time offer!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Flower Delivery</h3>
+                <p>We deliver fresh flowers to your doorstep.</p>
+            </div>
+            <div class="card">
+                <h3>Event Decoration</h3>
+                <p>Beautiful floral decorations for your events.</p>
+            </div>
+            <div class="card">
+                <h3>Custom Bouquets</h3>
+                <p>Create custom bouquets for special occasions.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="contact" class="section">
+    <div class="contact-form">
+        <h3>Contact Us</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+</footer>
+
+</body>
+</html>
